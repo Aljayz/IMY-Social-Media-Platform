@@ -1,11 +1,5 @@
 <template>
-  <q-item
-    clickable
-    tag="a"
-    target="_blank"
-    :href="link"
-
-  >
+  <q-item :to="link" clickable>
     <q-icon size="30px" :name="icon"/>
     <q-item-section v-if="$q.screen.gt.sm">
       <q-item-label class="q-pa-md q-gutter-sm">{{ title }}</q-item-label>

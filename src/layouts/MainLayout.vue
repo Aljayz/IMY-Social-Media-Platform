@@ -12,9 +12,12 @@
         />
       </q-toolbar>
     </q-header> -->
-    <q-item-label v-if="$q.screen.lt.md" header>
+    <q-header class="bg-white" v-if="$q.screen.lt.md">
+      <q-item-label header>
       <div class="text-center text-h2 text-bold" >IMY</div>
-    </q-item-label>
+      </q-item-label>
+    </q-header>
+
     <q-drawer
       v-if="$q.screen.gt.sm"
       show-if-above
@@ -49,8 +52,6 @@
 <script setup lang="ts">
 // import { ref } from 'vue';
 import MenuComponent, {type MenuProps } from 'components/MenuComponent.vue';
-
-
 
 const linksList: MenuProps[] = [
   {
