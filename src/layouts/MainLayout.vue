@@ -13,19 +13,20 @@
       </q-toolbar>
     </q-header> -->
     <q-item-label v-if="$q.screen.lt.md" header>
-      <div class="text-center text-h3 text-bold" >IMY</div>
+      <div class="text-center text-h2 text-bold" >IMY</div>
     </q-item-label>
     <q-drawer
       v-if="$q.screen.gt.sm"
       show-if-above
       bordered
-      :width="300"
+      :width="250"
     >
     <div class="vertical-middle">
       <q-list>
       <q-item-label header>
-        <div class="text-center text-h3 text-bold" >IMY</div>
+        <div class="text-center text-h1 text-bold" >IMY</div>
       </q-item-label>
+      <q-separator class="q-my-md" />
       <MenuComponent v-for="link in linksList" :key="link.title" v-bind="link"/>
       </q-list>
     </div>
